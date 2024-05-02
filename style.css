@@ -1,6 +1,7 @@
 * {
-    margin: 10;
-    padding: 10;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -13,23 +14,31 @@ h1{
     color:crimson
 }
 header{
+    /* padding: 10px;*/
     background-color:black;
     color:white;
-    height: 410px;
+   /* height: 410px;*/
     position: -webkit-sticky;
     position: sticky;
+    top:0;
+
 }
  header ul{
     background-color:rgb(155, 216, 139);
     display: flex;
     justify-content: space-evenly;
+    list-style: none;
 }
 
 main{
+
+    padding: 3%;
     background-color:darkslategrey;
     color:white;
 }
 footer{
+ 
+    padding: 3%;
     background-color:aquamarine;
     color:black;
     font-size: small;
@@ -39,3 +48,21 @@ footer form{
     justify-content:center;
     color: yellow
 }
+.flex {
+     /*height: 10vh; /*queremos tener de alto el 20 del alto del navegador*/
+   
+    display:flex;
+    justify-content: space-between; /*con respecto al eje principal que es la fila(horizontal)*/ 
+    align-items: left; /*con respecto al eje secundario que es la columna(vertical)*/
+    
+    padding: 0px 0px;
+}
+.cuadro-flex {
+ margin-top: 20px;
+ padding: 3%;
+ width: 95%;
+ align-items: center; 
+}
+.logo {
+    margin: 20px;
+   }
