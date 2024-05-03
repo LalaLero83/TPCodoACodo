@@ -89,6 +89,8 @@ nav {
     .menu.active {
         display: flex;
     }
+}
+
 main{
 
     padding: 3%;
