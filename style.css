@@ -95,6 +95,12 @@ main{
     background-color:darkslategrey;
     color:white;
 }
+
+.ubicacionEnElMapa{
+    width: 940px;
+    margin: 0 auto;
+    
+}
 footer{
  
     padding: 3%;
@@ -102,11 +108,49 @@ footer{
     color:black;
     font-size: small;
 }
-footer form{
+
+form{
+    margin: 20px;
+}
+
+form label{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.ingreso_de_datos{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25 px;
+    width: 50%;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background:orange;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: rgb(138, 81, 0);
+    transform: scale(1.1);
+}
+
+
+/* form{
     display: flex;
     justify-content:center;
     color: yellow
-}
+} */
+
 .flex {
      /*height: 10vh; /*queremos tener de alto el 20 del alto del navegador*/
    
@@ -122,6 +166,7 @@ footer form{
  width: 95%;
  align-items: center; 
 }
+
 .logo {
     margin: 20px;
-   }
+}

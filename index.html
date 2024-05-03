@@ -60,31 +60,48 @@
             </div>
 
         <section id="Populares">Acá listado de cursos más vistos</section>
+
     </main>
 </body>
 <footer>
     <p>Contacto.</p>
-    <a href="mailto:mlauraduarte83@gmail.com">Envianos mail con tu consulta</a>
-    <form class="formularioDeContacto" action="/action_page.php" method="get" ></form> <p>Podes dejarnos tu consulta o comentario.</p>   
+    <!-- <a href="mailto:mlauraduarte83@gmail.com">Envianos mail con tu consulta</a> -->
+    <!-- <form class="formularioDeContacto" action="/action_page.php" method="get" ></form> <p>Podes dejarnos tu consulta o comentario.</p> -->
+    <!-- Este sentencia de arriba tiene un action= que contiene un /action_page.php que no se a que se refiere, por eso lo dejo comentado (dante) -->
+    
+    <form action="formularioDeContacto ">
+
         <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" class="ingreso_de_datos" requiered>
+
         <label for="lastname">Apellido:</label>
-        <input type="text" id="lastname" name="lastname">
+        <input type="text" id="lastname" name="lastname" class="ingreso_de_datos" required>
+
         <label for="mail">Mail:</label>
-        <input type="text" id="mail" name="mail">
+        <input type="text" id="mail" name="mail" class="ingreso_de_datos" required placeholder="email@dominio.com">
+
         <label for="tel">Teléfono:</label>
-        <input type="text" id="tel" name="tel">
+        <input type="text" id="tel" name="tel" class="ingreso_de_datos" placeholder="(xxxx) xxxx-xxxx">
+
         <label for="name">¿Cómo preferís recibir respuesta?:</label>
         <input type="checkbox" name="option" value="1">Por mail
+
         <input type="checkbox" name="option" value="2">Por teléfono
         <label for="comment">Consulta:</label>
-        <textarea name="comment" rows="7" cols="40">Escribe tu consulta...</textarea>
-        <input type="submit" value="Enviar">
-    </form>    
 
-    <p>¿Dónde nos encontras? Estamos en Gaona 1634, en el barrio de Caballito.</p>
-     <div class="ubicacionEnElMapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.755850573096!2d-58.4513696!3d-34.6103348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca10817b7831%3A0x49958aa095e08373!2sAv.%20Gaona%201634%2C%20C1405%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1714758164517!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+        <label for="mensaje">Mensaje</label>
+        <textarea name="comment" rows="70" cols="40">Escribe tu consulta...</textarea requiered>
+        <input type="submit" value="Enviar Formulario" class="enviar">
+       
+    </form> 
+
+    <section class="mapa">
+        <h3 class="titulo-principal">Nuestra ubicación</h3>
+        <p>¿Dónde nos encontras? Estamos en Gaona 1634, en el barrio de Caballito.</p>
+        <div class="ubicacionEnElMapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.755850573096!2d-58.4513696!3d-34.6103348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca10817b7831%3A0x49958aa095e08373!2sAv.%20Gaona%201634%2C%20C1405%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1714758164517!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
 </footer>
 </html>
