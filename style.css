@@ -10,18 +10,17 @@ h1{
     color:darkorchid
 }
 
+
 .alert{
     color:crimson
 }
-header{
-    /* padding: 10px;*/
-    background-color:black;
-    color:white;
-   /* height: 410px;*/
+header {
+    background-color: black;
+    color: white;
     position: -webkit-sticky;
     position: sticky;
-    top:0;
-
+    top: 0;
+    padding: 0;
 }
  header ul{
     background-color:#333;
@@ -36,7 +35,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1px;
+    padding: 0;
 }
 
 .menu {
@@ -46,7 +45,7 @@ nav {
 }
 
 .menu li {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .menu li:last-child {
@@ -104,7 +103,7 @@ main{
     
 }
 .ubicacionEnElMapa{
-    width: 940px;
+    width: 1100px;
     margin: 0 auto;
     
 }
@@ -117,14 +116,15 @@ footer{
 }
 
 form{
-    margin: 20px;
+    margin: 10px;
+    background-color: cornflowerblue;
 }
 
 .formularioDeContacto {
     max-width: 500px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: cornflowerblue;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -171,18 +171,68 @@ form label{
      /*height: 10vh; /*queremos tener de alto el 20 del alto del navegador*/
    
     display:flex;
-    justify-content: space-between; /*con respecto al eje principal que es la fila(horizontal)*/ 
+    justify-content:center; /*con respecto al eje principal que es la fila(horizontal)*/ 
     align-items: left; /*con respecto al eje secundario que es la columna(vertical)*/
     
     padding: 0px 0px;
 }
 .cuadro-flex {
- margin-top: 20px;
+ margin-top: 0px;
  padding: 3%;
  width: 95%;
  align-items: center; 
 }
 
 .logo {
-    margin: 20px;
+    margin: 0px;
+    height: 200px;
+}
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;                            
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#about-us {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
