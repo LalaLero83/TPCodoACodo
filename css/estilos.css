@@ -76,6 +76,34 @@ nav{
            
  }
 
+ 
+.cursos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.curso {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.curso:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.curso h3 {
+    margin-top: 0;
+}
 /*ESTILOS PARA HEADER MOBILE Y TABLET*/
 
 @media (max-width: 768px) {
