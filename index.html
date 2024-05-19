@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CursArte</title>
-   
-    <!-- Agrega SweetAlert CSS y JS al final de tu archivo HTML -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-
     <link rel="stylesheet" href="./css/estilos.css">
    <link rel="shortcut icon" href="images/favicom.ico" type="image/x-icon">
 </head>
@@ -30,105 +27,26 @@
     <main class="main">
         <section id="presentacion">
             <h1>CursArte</h1>
-            <h2>Bienvenidos a nuestra página con cursos artísticos para todos!</h2>
-            <h3>Podrás encontrar diferentes cursos, divididos por temática y nivel.</h3>     
+            <h2>Bienvenidos a nuestra página con cursos artísticos de diferentes temáticas.</h2>
             <br>       
             <a class="enviar" href="./pages/registrarse.html">Registrate</a>
         </section>
-        <section id="video">
-            <h2>Para los más chicos:</h2>
-            <h3>Les compartimos un video para que puedan ver cómo trabajamos con los más chicos.</h3>
-            <iframe  src="https://www.youtube.com/embed/w5vi-0Z0T6c?si=pPW2sCx-hgL9elee" wititle="YouTube video player"  width="90%" height="225" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
+        
 
-        <section id="cuadrocursos" class="peliculasTendencia">
-            <h2>Cursos Disponibles</h2>
-          
-
-                <div id="contenedor-cursos" class="movies-flex">
-                    <div class="movie-item" id="movie1">
-                      <a href="./pages/detallePelicula.html">
-                        <img src="https://image.tmdb.org/t/p/w500/rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg"" alt="" class="movie-item-img" />
-                        <div class="movie-item-detail">
-                          <p class="movie-item-detail-title">Mario Bros</p>
-                          <p class="movie-item-detail-subtitle">2023 - 6.9 ⭐</p>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="movie-item" id="movie2">
-                      <a href="detail-movie.html">
-                        <img
-                          src="https://image.tmdb.org/t/p/w500/rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg"
-                          alt=""
-                          class="movie-item-img"
-                        />
-                        <div class="movie-item-detail">
-                          <p class="movie-item-detail-title">The Flash</p>
-                          <p class="movie-item-detail-subtitle">2023 - 6.9 ⭐</p>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="movie-item" id="movie3">
-                      <a href="detail-movie.html">
-                        <img
-                          src="https://image.tmdb.org/t/p/w500/ym1dxyOk4jFcSl4Q2zmRrA5BEEN.jpg"
-                          alt=""
-                          class="movie-item-img"
-                        />
-                        <div class="movie-item-detail">
-                          <p class="movie-item-detail-title">The Little Mermaid</p>
-                          <p class="movie-item-detail-subtitle">2023 - 6.4 ⭐</p>
-                        </div>
-                      </a>
-                    </div>
-          
-                    <div class="movie-item" id="movie4">
-                      <a href="detail-movie.html">
-                        <img
-                          src="https://image.tmdb.org/t/p/w500/kgrLpJcLBbyhWIkK7fx1fM4iSvf.jpg"
-                          alt=""
-                          class="movie-item-img"
-                        />
-                        <div class="movie-item-detail">
-                          <p class="movie-item-detail-title">
-                            Ruby Gillman, Teenage Kraken
-                          </p>
-                          <p class="movie-item-detail-subtitle">2023 - 7.8 ⭐</p>
-                        </div>
-                      </a>
-                    </div>
-          
-                    <div class="movie-item" id="movie5">
-                      <a href="detail-movie.html">
-                        <img
-                          src="https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg"
-                          alt=""
-                          class="movie-item-img"
-                        />
-                        <div class="movie-item-detail">
-                          <p class="movie-item-detail-title">
-                            Guardians of the Galaxy Vol. 3
-                          </p>
-                          <p class="movie-item-detail-subtitle">2023 - 8.1 ⭐</p>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="movie-item" id="movie6">
-                      <a href="detail-movie.html">
-                        <img
-                          src="https://image.tmdb.org/t/p/w500/fiVW06jE7z9YnO4trhaMEdclSiC.jpg"
-                          alt=""
-                          class="movie-item-img"
-                        />
-                        <div class="movie-item-detail">
-                          <p class="movie-item-detail-title">Fast X</p>
-                          <p class="movie-item-detail-subtitle">2023 - 7.3 ⭐</p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-         
-        </section>
+          <section class="cursos">
+              <div class="curso" id="pintura">
+                  <h3>Curso de Pintura</h3>
+                  <p>Aprende las técnicas básicas y avanzadas de la pintura.</p>
+              </div>
+              <div class="curso" id="escultura">
+                  <h3>Curso de Escultura</h3>
+                  <p>Descubre el arte de esculpir con diversos materiales.</p>
+              </div>
+              <div class="curso" id="fotografia">
+                  <h3>Curso de Fotografía</h3>
+                  <p>Domina el arte de la fotografía con este curso completo.</p>
+              </div>
+          </section>
   
         <section id="formulario" >
           <div  class="movies-flex">
