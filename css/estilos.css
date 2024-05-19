@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+   }
+
+body{
+    background-color: #FFF;
+    color:#333333; 
+     /* scrollbar-color: #9f3647  #181419; /*nuevo
+     scrollbar-width: thin;*/
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    background-color:#000;
+    color:#ffffff;
+}
+.logo {
+    margin: 0px;
+ /*  height: 100px;*/
+}
+.logo img {
+  /*  max-width: 100%;*/
+    max-height: 150px;
+    /*object-fit: contain;   */                         
+}
+
+/*ESTILOS HEADER PARA ESCRITORIO*/
+nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left:40px;
+        margin-right: 40px;
+        padding: 1.5rem 0;
+}
+.listaNav{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            .listaItem{
+                margin-right:20px;
+                .linkNav{
+                    text-decoration: none;
+                    color:#ffffff;
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    padding: 0.5rem 1rem;
+                    /* Agregar efecto de botón presionado */
+                    transition: transform 0.3s, box-shadow 0.3s;
+                    &:hover {
+                        transform: scale(0.95);
+                        box-shadow: 0 0 20px rgba(255, 254, 254, 0.911);
+                        border-radius: 5px;
+                    }
+                }
+                .linkNav.iniciarSesion{
+                    background-color: #d3c053;
+                    color: #333;
+                    
+                    border-radius: 5px;
+                     /* Agregar efecto de botón presionado */
+                     transition: transform 0.3s, box-shadow 0.3s;
+                     &:hover {
+                         background-color: #c10ed1;
+                         color:white;
+                        /* transform: scale(0.95);
+                         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
+                     }
+                }
+            }
+           
+ }
+
+/*ESTILOS PARA HEADER MOBILE Y TABLET*/
+
+@media (max-width: 768px) {
+header{
+        height: initial;
+    }
+nav{
+            margin-left:10px;
+            margin-right: 10px;
+            flex-direction: column;
+            row-gap: 20px;
+        }       
+ .listaNav{
+               
+                padding:initial;
+                .listaItem{
+                    .linkNav{
+                        font-weight: 400;
+                        margin-right: initial;
+                        font-size: 1rem;
+                        padding: 0.2rem;
+                        
+                    }
+                  
+                }
+            }
+       
+
+    .logo img {
+        /*  max-width: 100%;*/
+          max-height: 250px;
+          /*object-fit: contain;   */                         
+      }
+}
+/*ESTILOS PARA MAIN ESCRITORIO*/
+/*main {
+    padding: 20px;
+}*/
+    
+#presentacion{
+        color:white;
+        background:linear-gradient(to right top, #f70505fa, #0509f78a);
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+ }
+h1{
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+ }
+h2{
+            font-size: 2.2rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+ }
+ h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}      
+
+     
+#video{
+    text-align: center;
+    margin-top: 0px;
+    padding: 20px;
+    align-items: center;
+    background-color: #d3c053;
+    height: 40vh;
+}
+  
+#cuadrocursos{
+        width:80%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 10px;
+}
+       
+.movies-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.movie-item-img {
+    width:200px;
+}
+
+
+
+#formulario{
+       /* width:80%;*/
+        margin: 0 auto;
+        padding: 30px;
+        /*text-align: center;*/
+        background-color: cornflowerblue;
+        margin-top: 10px;
+        margin-bottom:60px;
+   
+    }
+
+    form{
+        /*margin: 10px;
+   /*     background-color: cornflowerblue;*/
+        padding: 20px;
+    }
+    input{
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-size: large;
+        padding: 5px;
+    }
+    
+    .formularioDeContacto {
+        max-width: 500px;
+      /*  margin: 50px auto;*/
+        padding: 20px;
+        background-color: cornflowerblue;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+        
+    form label{
+        display: block;
+        font-size: 20px;
+        margin: 0 0 10px;
+    }
+    
+    .ingreso_de_datos{
+        display: block;
+        margin: 0 0 20px;
+        padding: 10px 25 px;
+        width: 50%;
+    }
+    
+    .enviar{
+        width: 40%;
+        padding: 15px 0;
+        font-size: 18px;
+        font-weight: bold;
+        color:white;
+        background:orange;
+        border: none;
+        border-radius: 10px;
+        transition: 1s all;
+        cursor: pointer;
+    }
+    
+    .enviar:hover{
+        background: rgb(138, 81, 0);
+        transform: scale(1.1);
+    }
+
+
+    .ubicacionEnElMapa{
+    /*    width: 1100px;*/
+        margin: 0 auto;
+        
+    }
+
+@media (max-width: 768px) {
+.main{
+       #presentacion{
+            height: 60vh;
+
+            .botonRegistrarse{
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+       
+        #cuadrocursos{
+            width: 95%;
+         
+        }
+        #formulario{
+            padding: 10px;
+           
+        }
+    }
+}
+
+/*ESTILOS ESCRITORIO FOOTER*/
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    
+  
+}
+/*ESTILOS FOOTER CELULAR Y TABLET CHICA*/
+@media (max-width: 768px) {
+footer{
+        height: initial;
+        padding-top:15px;
+        padding-bottom: 20px;
+        .listaNav{
+            flex-direction: column;
+           
+            row-gap: 15px;
+            .listaItem{
+                
+                .linkNav{
+                    font-size: 1rem;
+                }
+   
+            }
+        }
+    }
+}

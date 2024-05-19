@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/LogoCorto.jpg">
+    <title>CursArte</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <header>
+        <div class="flex">
+            <div class="logo">
+                <img src="images/Logo.jpg">
+            </div>
+            <div class="cuadro-flex">
+                <h1>CursArte</h1>
+                <h2>Bienvenidos a nuestra página con cursos artísticos para todos!</h2>
+                <h3>Podrás encontrar diferentes cursos, divididos por temática y nivel.</h3>
+            </div>
+        </div> 
+        <nav>
+            <div class="menu-icon">&#9776;</div>
+            <ul class="menu">
+                <li><a href="Historia.html">¿Quiénes somos?</a></li>
+                <li><a href="#Populares">Cursos más vistos</a></li>
+                <li><a href="registro.html" target="_blank">Registrarse</a></li>
+                <li><a href="Inicio sesión.html" target="_blank">Iniciar Sesión</a></li>
+            </ul>    
+        </nav>
+        <script src="script.js"></script>
+    </header>
+   
+    <main>
+            <h3>Cursos:</h3>
+            <ul>
+            <li class="alert">Acuarela:</li>
+            <ul>
+                <li> Básico </li>
+                <li> Intermedio </li>
+                <li> Avanzado </li>
+            </ul>
+                <li class="alert">A lápiz:</li>
+            <ul>
+                <li> Básico </li>
+                <li> Intermedio </li>
+                <li> Avanzado </li>
+            </ul>
+                <li class="alert">Caricaturas:</li>
+            <ul>
+                <li> Básico </li>
+                <li> Intermedio </li>
+                <li> Avanzado </li>
+            </ul>
+
+            <div class="video">
+                <h2>Para los más chicos:</h2>
+                <p>Les compartimos un video para que puedan ver cómo trabajamos con los más chicos.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/w5vi-0Z0T6c?si=pPW2sCx-hgL9elee" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        <section id="Populares">Acá listado de cursos más vistos</section>
+
+    </main>
+</body>
+
+    <!-- <a href="mailto:mlauraduarte83@gmail.com">Envianos mail con tu consulta</a> -->
+    <!-- <form class="formularioDeContacto" action="/action_page.php" method="get" ></form> <p>Podes dejarnos tu consulta o comentario.</p> -->
+    <!-- Este sentencia de arriba tiene un action= que contiene un /action_page.php que no se a que se refiere, por eso lo dejo comentado (dante) -->
+    
+    <form id="miFormulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" class="ingreso_de_datos">
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" class="ingreso_de_datos">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="ingreso_de_datos" placeholder="email@dominio.com">
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" class="ingreso_de_datos" placeholder="xxxxxxxx">
+       
+        <label for="name">¿Cómo preferís recibir respuesta?:</label>
+        <input type="checkbox" name="option" value="1">Por mail
+
+        <input type="checkbox" name="option" value="2">Por teléfono
+        <label for="comment">Consulta:</label>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea name="comment" rows="10" cols="60" placeholder="Escribe tu consulta..."></textarea><br>   
+        <button type="submit"value="Enviar Formulario" class="enviar">Enviar</button>
+    </form>
+    <footer>
+    <section class="mapa">
+        <h3 class="titulo-principal">Nuestra ubicación</h3>
+        <p>¿Dónde nos encontras? Estamos en Gaona 1634, en el barrio de Caballito.</p>
+        <div class="ubicacionEnElMapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.755850573096!2d-58.4513696!3d-34.6103348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca10817b7831%3A0x49958aa095e08373!2sAv.%20Gaona%201634%2C%20C1405%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1714758164517!5m2!1ses!2sar" width="90%" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    </footer>
+       <!-- ASweetAlert CSS y JS  -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+   
+    </body>
+</html>
