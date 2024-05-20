@@ -67,6 +67,8 @@ nav {
     padding: 20px;
 }
 
+
+
 @media screen and (max-width: 768px) {
     .menu {
         display: none;
@@ -93,7 +95,7 @@ nav {
 main{
 
     padding: 3%;
-    background-color:darkslategrey;
+    background-color:rgb(79, 57, 47);
     color:white;
 }
 
@@ -124,7 +126,7 @@ form{
     max-width: 500px;
     margin: 50px auto;
     padding: 20px;
-    background-color: cornflowerblue;
+    background-color: rgb(14, 235, 80);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -160,6 +162,13 @@ form label{
     transform: scale(1.1);
 }
 
+.cursos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: rgb(241, 13, 154);
+}
 
 /* form{
     display: flex;
