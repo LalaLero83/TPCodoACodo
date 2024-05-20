@@ -12,22 +12,37 @@ body{
      scrollbar-width: thin;*/
 }
 
+
 header {
     position: -webkit-sticky;
     position: sticky;
     top:0;
     background-color:#000;
     color:#ffffff;
+    z-index: 1000;
+    
+}   
+
+/*ESTILOS HEADER PARA ESCRITORIO*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:40px;
+    margin-right: 40px;
+    padding:0;
 }
+
 .logo {
     margin: 0px;
  /*  height: 100px;*/
 }
 .logo img {
-  /*  max-width: 100%;*/
-    max-height: 150px;
-    /*object-fit: contain;   */                         
-}
+    /*  max-width: 100%;*/
+      max-height: 5rem;
+      /*object-fit: contain;   */                         
+  }
+  
 
 /*ESTILOS HEADER PARA ESCRITORIO*/
 nav{
@@ -59,7 +74,7 @@ nav{
                     }
                 }
                 .linkNav.iniciarSesion{
-                    background-color: #d3c053;
+                    background-color: #8e69b9;
                     color: #333;
                     
                     border-radius: 5px;
@@ -76,6 +91,61 @@ nav{
            
  }
 
+ #quienessomos {
+    /* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos para los títulos */
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h4 {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Estilos para la lista de navegación */
+.listaNav {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.listaItem {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.linkNav {
+    color: #fff;
+    text-decoration: none;
+}
+
+.linkNav:hover {
+    text-decoration: underline;
+}
+
+
+ }
  
 .cursos {
     display: flex;
@@ -94,6 +164,22 @@ nav{
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.curso a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.curso {
+    position: relative;
+    overflow: hidden;
 }
 
 .curso:hover {
@@ -155,6 +241,13 @@ nav{
         align-items: center;
         text-align: center;
  }
+
+ main h1 .especial {
+    font-family:cursive;
+    font-style:italic;
+    font-weight: 700;
+    color: #11b979;
+ }
 h1{
             font-size: 4rem;
             font-weight: 700;
@@ -172,15 +265,31 @@ h2{
 }      
 
      
-#video{
+.video {
     text-align: center;
     margin-top: 0px;
     padding: 20px;
-    align-items: center;
-    background-color: #d3c053;
+    background-color: rgb(138, 81, 0);
     height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-  
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    max-width: 560px;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 #cuadrocursos{
         width:80%;
         margin: 0 auto;
@@ -188,14 +297,14 @@ h2{
         margin-top: 10px;
 }
        
-.movies-flex {
+.cuadros-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.movie-item-img {
+.cuadro-item-img {
     width:200px;
 }
 
@@ -284,6 +393,7 @@ h2{
        
         #cuadrocursos{
             width: 95%;
+      
          
         }
         #formulario{
