@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var email = document.getElementById('email').value.trim();
         var telefono = document.getElementById('telefono').value.trim();
 
-        if (!nombre || !apellido || !email || !telefono) {
+        if (!nombre || !apellido || !email || !telefono || !terminos ) {
             event.preventDefault();
             swal('Error', 'Por favor, completa todos los campos obligatorios.', 'error');
         } else if (!/^\d+$/.test(telefono)) {
