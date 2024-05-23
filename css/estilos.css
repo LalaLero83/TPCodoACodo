@@ -75,20 +75,7 @@ nav{
                         border-radius: 5px;
                     }
                 }
-                .linkNav.iniciarSesion{
-                    background-color: #a0f7a7;
-                    color: #333;
-                    
-                    border-radius: 5px;
-                     /* Agregar efecto de botón presionado */
-                     transition: transform 0.3s, box-shadow 0.3s;
-                     &:hover {
-                         background-color: #c10ed1;
-                         color:white;
-                        /* transform: scale(0.95);
-                         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
-                     }
-                }
+             
             }
            
  }
