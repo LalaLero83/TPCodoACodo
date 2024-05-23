@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
         var apellido = document.getElementById('apellido').value.trim();
         var email = document.getElementById('email').value.trim();
         var telefono = document.getElementById('telefono').value.trim();
+          var terminos = document.getElementById('terminos').value.trim();
+
 
         if (!nombre || !apellido || !email || !telefono || !terminos ) {
             event.preventDefault();
