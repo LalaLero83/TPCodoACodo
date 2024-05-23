@@ -15,14 +15,12 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="#">
-                    <img src="images/logopeq.jpg" alt="Logo">
+                <a href="index.html">
+                    <img src="images/logopeq.jpg" alt="Inicio">
                 </a>
             </div>
             <ul class="listaNav">
                 <li class="listaItem"><a class="linkNav" href="quienessomos.html" target="_blank">¿Quiénes somos?</a></li>
-                <li class="listaItem"><a class="linkNav" href="./pages/registrarse.html">Registrarse</a></li>
-                <li class="listaItem"><a class="linkNav iniciarSesion" href="./pages/iniciosesion.html">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </header>
@@ -52,8 +50,8 @@
         </section>
 
         <section id="formulario">
-            <div class="cuadros-flex">
-                <div class="cuadro-item">
+            <div class="contenido-flex">
+                <div class="item-flex">
                     <h2>Contactanos</h2>
                     <form id="miFormulario">
                         <label for="nombre">Nombre:</label>
@@ -69,17 +67,24 @@
                         <input type="tel" id="telefono" name="telefono" class="ingreso_de_datos" placeholder="xxxxxxxx">
                         
                         <label for="name">¿Cómo preferís recibir respuesta?:</label>
-                        <input type="checkbox" name="option" value="1">Por mail
-                        <input type="checkbox" name="option" value="2">Por teléfono
+                        <input type="checkbox" name="option" value="1"> Por mail
+                        <input type="checkbox" name="option" value="2"> Por teléfono
+<br><br>
+                        <label for="interes">Elije un curso de interes</label>
+                        <select name="interes" class="ingreso_de_datos"  id="interes">
+                            <option>Elegir curso</option>
+                            <option value="Pintura">Curso de Pintura</option>
+                            <option value="Escultura">Curso de Escultura</option>
+                            <option value="Fotografía">Curso de Fotografía</option>
+                          </select>
 
-                        <label for="comment">Consulta:</label>
-                        <label for="mensaje">Mensaje</label>
-                        <textarea name="comment" rows="10" cols="60" placeholder="Escribe tu consulta..."></textarea><br>
+<label for="mensaje">Mensaje</label>
+                        <textarea name="comment" rows="10" cols="60" class="ingreso_de_datos"  placeholder="Escribe tu consulta..."></textarea><br>
                         
                         <button type="submit" value="Enviar Formulario" class="enviar">Enviar</button>
                     </form>
                 </div>
-                <div class="cuadro-item">
+                <div class="item-flex">
                     <h3>Nuestra ubicación</h3>
                     <p>¿Dónde nos encontras? Estamos en Gaona 1634, en el barrio de Caballito.</p>
                     <div class="ubicacionEnElMapa">
@@ -89,13 +94,12 @@
             </div>
         </section>
     </main>
-
     <footer>
         <nav>
             <ul class="listaNav">
-                <li class="listaItem"><a class="linkNav" href="tyc.html" target="_blank">Términos y condiciones</a></li>
-                <li class="listaItem"><a class="linkNav" href="preguntas.html" target="_blank">Preguntas frecuentes</a></li>
-                <li class="listaItem"><a class="linkNav" href="ayuda.html" target="_blank">Ayuda</a></li>
+                <li class="listaItem"><a class="linkNav" href="tyc.html">Términos y condiciones</a></li>
+                <li class="listaItem"><a class="linkNav" href="preguntas.html">Preguntas frecuentes</a></li>
+                <li class="listaItem"><a class="linkNav" href="ayuda.html">Ayuda</a></li>
             </ul>
         </nav>
     </footer>
