@@ -260,7 +260,7 @@ form label{
         margin: 0 0 10px;
 
     }
- textarea, checkbox {
+ select, textarea, checkbox {
         display: block;
        margin: 0 0 10px;
         border-radius: 5px;
